@@ -1,0 +1,64 @@
+body {
+  background: black;
+  color: grey;
+  text-align: center;
+  font-family: "Arial";
+}
+
+button {
+  margin: 1%;
+}
+input {
+  margin: 1%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#instructions {
+  padding-top: 1%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+#navbar {
+  overflow: hidden;
+  width: 100%;
+  background-color: purple;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+.page-title {
+  padding-top: 3%;
+  margin-top: 3%;
+}
+
+form {
+  margin: 0 auto;
+  width: 450px;
+}
+
+form label {
+  width: 100px;
+  text-align: right;
+}
+form input {
+}

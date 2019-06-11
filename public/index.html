@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Alex's Persistent Chatroom</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+    <div id="navbar" class="sticky">
+      <a href="https://www.alexkramerbanjo.com">Home</a>
+      <a href="mailto:alexkrameris@gmail.com" target="_blank">Contact</a>
+    </div>
+    <h1 class="page-title">Alex's Persistent Chatroom</h1>
+    <div id="instructions">Type your name and message in the form</div>
+    <form action="">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" value="" />
+      </div>
+      <div>
+        <label for="m">Message:</label>
+        <input id="m" autocomplete="off" />
+      </div>
+      <div>
+        <button>
+          Send
+        </button>
+      </div>
+    </form>
+    <ul id="messages"></ul>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script>
+      $(function() {
+        var socket = io();
+        $("form").submit(function(e) {
+          e.preventDefault(); // prevents page reloading
+          const message = $("#name").val() + ": " + $("#m").val();
+          socket.emit("chat message", message);
+          $("#m").val("");
+          return false;
+        });
+        socket.on("messages", function(msg) {
+          const arr = msg.split("\n");
+          arr.forEach(m => {
+            $("#messages").prepend($("<li>").text(m));
+          });
+        });
+        socket.on("chat message", function(msg) {
+          $("#messages").prepend($("<li>").text(msg));
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "chatroom",
+  "version": "1.0.0",
+  "description": "a chatroom from scratch",
+  "main": "index.js",
+  "scripts": {
+    "test": "node \"index.js\" && exit 1"
+  },
+  "author": "Alex Kramer",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.2.0"
+  }
+}
