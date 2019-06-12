@@ -4,7 +4,8 @@
   "description": "a chatroom from scratch",
   "main": "index.js",
   "scripts": {
-    "test": "node \"index.js\" && exit 1"
+    "test": "node \"index.js\" && exit 1",
+    "start": "node 'index.js'"
   },
   "author": "Alex Kramer",
   "license": "ISC",
