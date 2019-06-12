@@ -1,0 +1,3 @@
+Alex: Welcome to this chatroom!
+Alex: It works using sockets.
+Alex: Your words here will last a long time.
