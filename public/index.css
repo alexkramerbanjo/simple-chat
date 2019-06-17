@@ -60,5 +60,15 @@ form label {
   width: 100px;
   text-align: right;
 }
-form input {
+#input-form {
+  margin-bottom: 40px;
+}
+#message-div {
+  margin: auto;
+  width: 66%;
+  padding-top: 40px;
+  border-style: solid;
+  border-color: lightblue;
+  border-width: 3px;
+  padding: 15px;
 }

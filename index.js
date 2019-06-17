@@ -27,5 +27,5 @@ io.on("connection", async function(socket) {
 });
 
 http.listen(port, function() {
-  console.log("listening on *:3000");
+  console.log("listening on *:80");
 });

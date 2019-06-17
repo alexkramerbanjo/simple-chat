@@ -1,3 +1,5 @@
 Alex: Welcome to this chatroom!
 Alex: It works using sockets.
 Alex: Your words here will last a long time.
+Captain Hook: We are working to test whether our styling for longer words seems to pan out.
+Captain Hook: The North Korean leader, Kim Jong-un, has visited China four times in the past year. But Mr. Xi, 66, who is one of the most traveled Chinese presidents, has been reluctant to honor the 35-year-old Mr. Kim by going to the North, a country that is right next door to China.

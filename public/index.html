@@ -17,7 +17,7 @@
     </div>
     <h1 class="page-title">Alex's Persistent Chatroom</h1>
     <div id="instructions">Type your name and message in the form</div>
-    <form action="">
+    <form id="input-form" action="">
       <div>
         <label for="name">Name:</label>
         <input type="text" id="name" value="" />
@@ -32,8 +32,9 @@
         </button>
       </div>
     </form>
-    <ul id="messages"></ul>
-
+    <div id="message-div">
+      <ul id="messages"></ul>
+    </div>
     <script src="/socket.io/socket.io.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
     <script>
